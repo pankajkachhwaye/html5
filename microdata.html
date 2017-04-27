@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	
+</head>
+   <body>
+      
+      <div itemscope>
+         <p>My name is <span itemprop="name">Zara</span>.</p>
+      </div>
+      
+      <div itemscope>
+         <p>My name is <span itemprop="name">Nuha</span>.</p>
+      </div>
+  <input type="button" onclick="getdata();" value="Get Data"/>
+   </body>
+   <script type='text/javascript'>
+   	function supports_microdata_api() {
+   return !document.getItems;
+}
+
+function getdata(){
+	var data = supports_microdata_api()
+	console.log(data);
+}
+
+
+   </script>
+</html>
